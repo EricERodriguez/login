@@ -5,30 +5,54 @@
       <form>
         <mat-form-field appearance="fill">
           <mat-label>Username</mat-label>
-          <input matInput placeholder="Username" required />
+          <input
+            matInput
+            [(ngModel)]="username"
+            name="username"
+            placeholder="Username"
+            required
+          />
         </mat-form-field>
 
         <mat-form-field appearance="fill">
           <mat-label>Email</mat-label>
-          <input matInput type="email" placeholder="Email" required />
+          <input
+            matInput
+            [(ngModel)]="email"
+            name="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
         </mat-form-field>
 
         <mat-form-field appearance="fill">
           <mat-label>Password</mat-label>
-          <input matInput type="password" placeholder="Password" required />
+          <input
+            matInput
+            [(ngModel)]="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
         </mat-form-field>
 
         <mat-form-field appearance="fill">
           <mat-label>Confirm Password</mat-label>
           <input
             matInput
+            [(ngModel)]="confirmPassword"
+            name="confirmPassword"
             type="password"
             placeholder="Confirm Password"
             required
           />
         </mat-form-field>
 
-        <button mat-raised-button color="primary">Register</button>
+        <button mat-raised-button color="primary" (click)="register()">
+          Register
+        </button>
       </form>
     </mat-card-content>
     <mat-card-actions>
