@@ -1,11 +1,117 @@
-.login-container {
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left,
+.right {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+}
 
-    .mat-card {
-        width: 100%;
-        max-width: 400px;
-    }
+.left {
+    background-color: #e0f7fa;
+}
+
+.right {
+    background-color: #ffffff;
+}
+
+.login-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+h2 {
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4b5563;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.checkbox label {
+    margin: 0;
+}
+
+.forgot-password {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbbf24;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #f59e0b;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
 }

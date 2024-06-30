@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 export class LoginComponent {
   username = '';
   password = '';
+  rememberMe = false;
 
   constructor(private authService: AuthService, private router: Router) {}
 
